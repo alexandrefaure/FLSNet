@@ -1,0 +1,112 @@
+﻿<UserControl x:Class="FLS.Pages.DashboardPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+             xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
+             mc:Ignorable="d"
+             d:DesignHeight="500.556" d:DesignWidth="1108.889">
+
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <Style x:Key="LargeTileStyle" TargetType="Controls:Tile">
+                <Setter Property="Height" Value="125" />
+                <Setter Property="TextOptions.TextFormattingMode" Value="Display" />
+                <Setter Property="TextOptions.TextRenderingMode" Value="ClearType" />
+                <Setter Property="TitleFontSize" Value="14" />
+                <Setter Property="Width" Value="300" />
+            </Style>
+
+            <Style x:Key="SmallTileStyle" TargetType="Controls:Tile">
+                <Setter Property="Height" Value="125" />
+                <Setter Property="TextOptions.TextFormattingMode" Value="Ideal" />
+                <Setter Property="TextOptions.TextRenderingMode" Value="ClearType" />
+                <Setter Property="TitleFontSize" Value="10" />
+                <Setter Property="Width" Value="147" />
+            </Style>
+
+            <!--Pour définir un arrière plan dans la tile-->
+            <VisualBrush x:Key="myBrush">
+                <VisualBrush.Visual>
+                    <Controls:Tile>
+                        <Rectangle Fill="BlueViolet" />
+                        <!--<Image Source="../Images/one.png"/>-->
+                    </Controls:Tile>
+                </VisualBrush.Visual>
+            </VisualBrush>
+        </ResourceDictionary>
+    </UserControl.Resources>
+
+    <!--<ScrollViewer HorizontalScrollBarVisibility="Visible" VerticalScrollBarVisibility="Disabled">-->
+    <Grid Background="{DynamicResource ValidationBrush2}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100" />
+            <ColumnDefinition Width="430*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="83*" />
+            <RowDefinition Height="259*" />
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Column="1"
+                   VerticalAlignment="Center"
+                   FontFamily="Segoe UI"
+                   FontSize="30"
+                   FontWeight="Light"
+                   Foreground="{DynamicResource BlackBrush}"
+                   Text="{Binding WelcomeUserTitle}" />
+
+        <WrapPanel Grid.Row="1"
+                   Grid.Column="1"
+                   Width="617"
+                   Height="382"
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Top" Margin="0,0,0,-3">
+            <Controls:Tile Title="Reconnaissance des lettres"
+                           Margin="3"
+                           Controls:ControlsHelper.MouseOverBorderBrush="{DynamicResource BlackBrush}"
+                           Background="Red"
+                           HorizontalTitleAlignment="Center"
+                           Count="1"
+                           Style="{StaticResource LargeTileStyle}" />
+            <!--Command="{Binding GoToDossiersCommand}" TitleFontSize="13" VerticalTitleAlignment="Center"-->
+            <!--Background="{StaticResource myBrush}"-->
+            
+            <Controls:Tile Title="Ecoute des lettres"
+                           Margin="3"
+                           Count="2"
+                           Controls:ControlsHelper.MouseOverBorderBrush="{DynamicResource BlackBrush}"
+                           Background="OrangeRed"
+                           Style="{StaticResource LargeTileStyle}" HorizontalTitleAlignment="Center">
+                <!--Command="{Binding GoToMedecinAppelantsCommand}" HorizontalTitleAlignment="Center" VerticalTitleAlignment="Center">-->
+            </Controls:Tile>
+
+            <Controls:Tile Title="Decodage des mots"
+                           Margin="3"
+                           Count="3"
+                           Background="DarkOrange"
+                           Controls:ControlsHelper.MouseOverBorderBrush="{DynamicResource BlackBrush}"
+                           Style="{StaticResource LargeTileStyle}"
+                           HorizontalTitleAlignment="Center">
+                <!--Command="{Binding GoToUsersCommand}" HorizontalTitleAlignment="Center" VerticalTitleAlignment="Center">-->
+            </Controls:Tile>
+
+            <Controls:Tile Title="Prononciation des phrases"
+                           Background="Orange"
+                           Count="4"
+                           HorizontalTitleAlignment="Center"
+                           Controls:ControlsHelper.MouseOverBorderBrush="{DynamicResource BlackBrush}"
+                           Style="{StaticResource LargeTileStyle}"
+                Command="{Binding OpenPrononciationPhrasesWindowCommand}"/>
+
+            <!--<Controls:Tile Title="Statistiques"
+                           Background="#D2691E"
+                           HorizontalTitleAlignment="Center"
+                           Style="{StaticResource LargeTileStyle}"
+                           Command="{Binding GoToChartsCommand}" VerticalTitleAlignment="Center">
+            </Controls:Tile>-->
+        </WrapPanel>
+    </Grid>
+    <!--</ScrollViewer>-->
+</UserControl>

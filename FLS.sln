@@ -1,0 +1,79 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2002
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlsGUI", "FlsGUI\FlsGUI.csproj", "{9BE0443D-8379-4B4F-AD1F-54FAB3540C07}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlsGUI.Tests", "FlsGUI.Tests\FlsGUI.Tests.csproj", "{CDBA883C-62FA-401A-8A24-822500709808}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlsCommon", "FlsCommon\FlsCommon.csproj", "{E69CDDE0-935C-4981-BC3B-0CFB89EE1EC9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlsBLL", "FlsBLL\FlsBLL.csproj", "{F0B98B3E-AE9D-4E2D-9AAC-425166A530E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlsBLL.Tests", "FlsBLL.Tests\FlsBLL.Tests.csproj", "{C621732F-6D20-4EEF-84EC-7EF2DBEB58FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlsDAL", "FlsDAL\FlsDAL.csproj", "{2EC85B70-9B07-4E88-A162-D2E1D0029EFB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9BE0443D-8379-4B4F-AD1F-54FAB3540C07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BE0443D-8379-4B4F-AD1F-54FAB3540C07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BE0443D-8379-4B4F-AD1F-54FAB3540C07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BE0443D-8379-4B4F-AD1F-54FAB3540C07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDBA883C-62FA-401A-8A24-822500709808}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDBA883C-62FA-401A-8A24-822500709808}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDBA883C-62FA-401A-8A24-822500709808}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDBA883C-62FA-401A-8A24-822500709808}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E69CDDE0-935C-4981-BC3B-0CFB89EE1EC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E69CDDE0-935C-4981-BC3B-0CFB89EE1EC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E69CDDE0-935C-4981-BC3B-0CFB89EE1EC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E69CDDE0-935C-4981-BC3B-0CFB89EE1EC9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0B98B3E-AE9D-4E2D-9AAC-425166A530E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0B98B3E-AE9D-4E2D-9AAC-425166A530E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0B98B3E-AE9D-4E2D-9AAC-425166A530E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0B98B3E-AE9D-4E2D-9AAC-425166A530E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C621732F-6D20-4EEF-84EC-7EF2DBEB58FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C621732F-6D20-4EEF-84EC-7EF2DBEB58FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C621732F-6D20-4EEF-84EC-7EF2DBEB58FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C621732F-6D20-4EEF-84EC-7EF2DBEB58FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2EC85B70-9B07-4E88-A162-D2E1D0029EFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EC85B70-9B07-4E88-A162-D2E1D0029EFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EC85B70-9B07-4E88-A162-D2E1D0029EFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EC85B70-9B07-4E88-A162-D2E1D0029EFB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3CBA3196-D274-4DCA-8399-E97CBA7E1988}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 7
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://aforit.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = FlsGUI\\FlsGUI.csproj
+		SccProjectName1 = FlsGUI
+		SccLocalPath1 = FlsGUI
+		SccProjectUniqueName2 = FlsGUI.Tests\\FlsGUI.Tests.csproj
+		SccProjectName2 = FlsGUI.Tests
+		SccLocalPath2 = FlsGUI.Tests
+		SccProjectUniqueName3 = FlsCommon\\FlsCommon.csproj
+		SccProjectName3 = FlsCommon
+		SccLocalPath3 = FlsCommon
+		SccProjectUniqueName4 = FlsBLL\\FlsBLL.csproj
+		SccProjectName4 = FlsBLL
+		SccLocalPath4 = FlsBLL
+		SccProjectUniqueName5 = FlsBLL.Tests\\FlsBLL.Tests.csproj
+		SccProjectName5 = FlsBLL.Tests
+		SccLocalPath5 = FlsBLL.Tests
+		SccProjectUniqueName6 = FlsDAL\\FlsDAL.csproj
+		SccProjectName6 = FlsDAL
+		SccLocalPath6 = FlsDAL
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,36 @@
+﻿<UserControl x:Class="FLS.Pages.AboutPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:viewModels="clr-namespace:FLS.ViewModels"
+             Width="Auto" Height="Auto">
+
+    <UserControl.Resources>
+        <!--<viewmodel:ViewModel x:Key="vm"></viewmodel:ViewModel>-->
+        <viewModels:SettingsViewModel x:Key="vm"></viewModels:SettingsViewModel>
+    </UserControl.Resources>
+
+    <!--<Grid>-->
+    <GroupBox Header="A propos">
+        <DockPanel HorizontalAlignment="Left" >
+            <Image 
+                DockPanel.Dock="Top"
+                Source="{StaticResource AFORITLogo}"
+                Stretch="None"
+                />
+            <TextBlock DockPanel.Dock="Top"
+                       Text="Logiciel FLSNet"></TextBlock>
+            <TextBlock DockPanel.Dock="Top"
+                       Text="Version 1.0"></TextBlock>
+            <TextBlock DockPanel.Dock="Top">           
+                <Hyperlink NavigateUri="https://www.aforit.fr">
+                    www.aforit.fr
+                </Hyperlink>
+            </TextBlock>
+            <TextBlock DockPanel.Dock="Top"
+                       Text="Copyright © 2018 AFORIT - Tous droits réservés"></TextBlock>
+            <TextBlock DockPanel.Dock="Top"
+                       Text="{Binding LicenceExpirationDate}"></TextBlock>
+        </DockPanel>
+    </GroupBox>
+</UserControl>
+

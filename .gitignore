@@ -1,0 +1,22 @@
+﻿################################################################################
+# Ce fichier .gitignore a été automatiquement créé par Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/BuildProcessTemplates
+/FlsBLL/bin/Debug
+/FlsBLL/obj
+/FlsBLL.Tests/bin/Debug
+/FlsBLL.Tests/obj
+/FlsCommon/bin/Debug
+/FlsCommon/obj
+/FlsDAL/bin/Debug
+/FlsDAL/obj
+/FlsGUI/amd64
+/FlsGUI/bin/Debug
+/FlsGUI/FR
+/FlsGUI/obj
+/FlsGUI/x86
+/FlsGUI.Tests/bin/Debug
+/FlsGUI.Tests/obj
+/packages
